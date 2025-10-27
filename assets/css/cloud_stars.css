@@ -28,7 +28,7 @@
 }
 
 .clouds{
-   background:transparent url(../images/clouds3.png) repeat top center;
+   background:transparent url(../clouds.png) repeat top center;
     z-index:3;
 
   -moz-animation:move-clouds-back 200s linear infinite;
