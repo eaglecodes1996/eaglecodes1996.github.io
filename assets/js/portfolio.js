@@ -136,11 +136,13 @@ $(document).ready( function() {
  $(document).ready( function() {   
 
 // filter items on button click
-$('.filter-button-group').on( 'click', 'li', function() {
+$('.filter-button-group').on( 'click', 'li a', function(e) {
+  e.preventDefault();
   var filterValue = $(this).attr('data-filter');
-  $('.grid').isotope({ filter: filterValue });
+  var selector = (!filterValue || filterValue === '*') ? '*' : '.grid-item[data-filter="' + filterValue + '"]';
+  $('#container').isotope({ filter: selector });
   $('.filter-button-group li').removeClass('active');
-  $(this).addClass('active');
+  $(this).closest('li').addClass('active');
 });
     })
 	
