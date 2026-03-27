@@ -1430,3 +1430,54 @@ p {
 		width: 100%;
 	}
 }
+
+/* Contact CTA Section */
+.contact-cta-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: #05C2DE;
+    margin-bottom: 0.6em;
+    opacity: 0.8;
+}
+.contact-cta-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.4em;
+}
+.contact-cta-sub {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.9rem;
+    margin-bottom: 1.6em;
+}
+.contact-freelancer-btn {
+    display: inline-block;
+    border: 1px solid #05C2DE;
+    color: #05C2DE;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.65em 1.8em;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s;
+}
+.contact-freelancer-btn:hover {
+    background: #05C2DE;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    padding: 1.2em;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+.footer-copy {
+    color: rgba(255,255,255,0.3);
+    font-size: 0.78rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}

@@ -16,11 +16,11 @@ $(document).ready( function() {
 		[720, 10]
 	];
 
-	var itemsPerPageDefault = 12;
+	var itemsPerPageDefault = 20;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
-	var currentFilter = '*';
+	var currentFilter = 'website';
 	var filterAtribute = 'data-filter';
 	var pageAtribute = 'data-page';
 	var pagerClass = 'isotope-pager';
@@ -109,6 +109,7 @@ $(document).ready( function() {
 
 	setPagination();
 	goToPage(1);
+	$container.isotope({ filter: '.grid-item[data-filter="website"]' });
 
 	//Adicionando Event de Click para as categorias
 	$('.filters a').click(function(){
