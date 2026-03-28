@@ -109,7 +109,7 @@ $(document).ready( function() {
 
 	setPagination();
 	goToPage(1);
-	$container.isotope({ filter: '.grid-item[data-filter="website"]' });
+	$container.isotope({ filter: '.grid-item[data-filter="website"], .grid-item[data-filter="odoo"]' });
 
 	//Adicionando Event de Click para as categorias
 	$('.filters a').click(function(){
@@ -143,8 +143,8 @@ $('.filter-button-group').on( 'click', 'li a', function(e) {
   var selector;
   if (!filterValue || filterValue === '*') {
     selector = '*';
-  } else if (filterValue === 'odoo') {
-    selector = '.odoo';
+  } else if (filterValue === 'website') {
+    selector = '.grid-item[data-filter="website"], .grid-item[data-filter="odoo"]';
   } else {
     selector = '.grid-item[data-filter="' + filterValue + '"]';
   }
